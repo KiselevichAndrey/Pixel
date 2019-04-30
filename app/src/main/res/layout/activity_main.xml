@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/pallete"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/image_view_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:id="@+id/back_btn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="4dp"
+                android:background="@drawable/back_btn"
+                android:onClick="backClick" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.widget.VerticalSeekBar
+                android:id="@+id/super_zoom"
+                android:layout_width="20dp"
+                android:layout_height="130dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="4dp"
+                android:maxHeight="2dp"
+                android:progressDrawable="@drawable/seekbar_superzoom_track"
+                android:thumb="@drawable/seekbar_superzoom_thumb" />
+        </RelativeLayout>
+    </FrameLayout>
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/pallete"
+        android:layout_width="match_parent"
+        android:layout_height="112dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/palette_left_btn"
+            android:layout_width="15dp"
+            android:layout_height="24dp"
+            android:background="@drawable/palette_left_btn_inactive"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/pallete_buttons_rows_container"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/pallete_buttons_rows_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toStartOf="@+id/palette_right_btn"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/palette_left_btn"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/palette_right_btn"
+            android:layout_width="15dp"
+            android:layout_height="24dp"
+            android:background="@drawable/palette_right_btn_inactive"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/pallete_buttons_rows_container"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

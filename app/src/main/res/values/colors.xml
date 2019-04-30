@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorSelected">#FFBA26</color>
+    <color name="colorMainBackground">#F5FAFE</color>
+    <color name="colorImageBound">#D8D8D8</color>
+    <color name="colorNotActiveButtonText">#738BA8</color>
+    <color name="colorTransparent">#00000000</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorDialogTextBig">#56687E</color>
+    <color name="colorDialogTextLittle">#738BA8</color>
+    <color name="colorSpinner">#E5EDFA</color>
+    <color name="colorSeekBar">#488DFF</color>
+    <color name="colorSelectedPaletteButton">#85BFF8</color>
+    <color name="colorButtonBorder">#99C6E4</color>
+    <color name="colorFinishedButton">#BDD7F7</color>
+    <color name="colorSecondButtonText">#688cab</color>
+</resources>

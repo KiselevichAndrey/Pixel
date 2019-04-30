@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <layer-list>
+            <item>
+                <shape>
+                    <solid android:color="@color/colorSpinner"/>
+                    <corners android:radius="35dp" />
+                    <padding android:bottom="30dp" android:left="30dp" android:right="30dp" android:top="30dp" />
+                </shape>
+            </item>
+            <item>
+                <scale android:drawable="@drawable/ic_launcher_foreground"
+                    android:scaleGravity="center_vertical|right"
+                    android:scaleWidth="40%"
+                    android:scaleHeight="40%"/>
+            </item>
+        </layer-list>
+    </item>
+</selector>

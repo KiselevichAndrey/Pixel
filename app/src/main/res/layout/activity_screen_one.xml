@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorMainBackground"
+        android:padding="0dp"
+        tools:context=".ScreenOne"
+        android:layout_below="@id/ad_view">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/screen_one_top_buttons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="6dp">
+
+                <Button
+                    android:id="@+id/button_gallery"
+                    android:layout_width="108dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_pressed_btn"
+                    android:fontFamily="@font/roboto_medium"
+                    android:onClick="tabClick"
+                    android:text="Галерея"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+
+                <Button
+                    android:id="@+id/button_workshop"
+                    android:layout_width="108dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/bg_unpressed_btn"
+                    android:fontFamily="@font/roboto_medium"
+                    android:onClick="tabClick"
+                    android:text="Мастерская"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorNotActiveButtonText"
+                    android:textSize="16sp"
+                    app:layout_constraintLeft_toRightOf="@id/button_gallery" />
+
+                <Button
+                    android:id="@+id/add_btn"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/add_btn"
+                    android:fontFamily="@font/roboto_medium"
+                    android:onClick="addClick"
+                    android:textColor="@android:color/white"
+                    android:visibility="gone"
+                    app:layout_constraintRight_toRightOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <Spinner
+                android:id="@+id/categories_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/spinner"
+                android:entries="@array/categories_titles" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/page_container"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                tools:layout_editor_absoluteX="4dp"
+                tools:layout_editor_absoluteY="4dp">
+
+
+            </android.support.v4.view.ViewPager>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/menu_btn"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/menu_btn"
+            android:onClick="menuClick"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/ad_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:adSize="SMART_BANNER"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        ads:adUnitId="@string/ad_banner_id_test">
+    </com.google.android.gms.ads.AdView>
+
+    <ImageView
+        android:id="@+id/splash"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:visibility="visible"
+        app:srcCompat="@drawable/splash" />
+</RelativeLayout>

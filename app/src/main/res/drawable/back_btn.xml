@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+
+        >
+        <bitmap android:src="@drawable/back_btn_shadow"
+            />
+    </item>
+    <item
+        android:left="10dp"
+        android:top="10dp"
+        android:right="10dp"
+        android:bottom="10dp">
+
+        <shape android:shape="oval">
+            <solid android:color="@color/colorWhite"/>
+        </shape>
+    </item>
+    <item
+        android:left="15dp"
+        android:top="15dp"
+        android:right="15dp"
+        android:bottom="15dp"
+        >
+        <bitmap android:src="@drawable/back_btn_icon"
+            />
+    </item>
+</layer-list>

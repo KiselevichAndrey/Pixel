@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/bg_add_and_loader_nine_patch"
+        android:minWidth="350dp">
+
+
+        <TextView
+            android:id="@+id/menu_main_text"
+            android:layout_width="207dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="76dp"
+            android:fontFamily="@font/roboto_light"
+            android:text="Выберите способ загрузки изображения"
+            android:textAlignment="center"
+            android:textColor="@color/colorDialogTextBig"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/add_close_btn"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/close_btn_lightbackground"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.85"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.18" />
+
+        <View
+            android:id="@+id/load_gallery_btn"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/main_load_image_from_gallery_btn"
+            app:layout_constraintEnd_toStartOf="@+id/camera_btn"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/menu_main_text" />
+
+        <View
+            android:id="@+id/camera_btn"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/camera_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/load_gallery_btn"
+            app:layout_constraintTop_toBottomOf="@+id/menu_main_text" />
+
+        <TextView
+            android:id="@+id/menu_second_sub_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/roboto_light"
+            android:text="Загрузить из галереи"
+            android:textColor="@color/colorDialogTextLittle"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/load_gallery_btn"
+            app:layout_constraintStart_toStartOf="@+id/load_gallery_btn"
+            app:layout_constraintTop_toBottomOf="@+id/load_gallery_btn" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/roboto_light"
+            android:text="Сделать фото"
+            android:textColor="@color/colorDialogTextLittle"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/camera_btn"
+            app:layout_constraintStart_toStartOf="@+id/camera_btn"
+            app:layout_constraintTop_toBottomOf="@+id/camera_btn" />
+    </android.support.constraint.ConstraintLayout>
+
+</RelativeLayout>

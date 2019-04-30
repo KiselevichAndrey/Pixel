@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/bg_preview">
+
+        <View
+            android:id="@+id/preview_restart_btn"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/restart_btn"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/preview_statisrics_first_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/roboto_light"
+            android:text="1723 квадрата"
+            android:textColor="@color/colorDialogTextBig"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/preview_statisrics_second_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/roboto_light"
+            android:text="14 цветов"
+            android:textColor="@color/colorDialogTextBig"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/preview_statisrics_first_line" />
+
+        <TextView
+            android:id="@+id/preview_statisrics_third_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/roboto_light"
+            android:text="2%"
+            android:textColor="@color/colorDialogTextBig"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/preview_statisrics_second_line" />
+
+
+        <View
+            android:id="@+id/preview_close_btn"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/close_btn_lightbackground"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/preview_left_btn"
+            android:layout_width="20dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="28dp"
+            android:background="@drawable/palette_left_btn_inactive"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/preview_right_btn"
+            android:layout_width="20dp"
+            android:layout_height="32dp"
+            android:layout_marginEnd="28dp"
+            android:background="@drawable/palette_right_btn_inactive"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/preview_image"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="64dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintEnd_toStartOf="@+id/preview_right_btn"
+            app:layout_constraintStart_toEndOf="@+id/preview_left_btn"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:srcCompat="@drawable/pixelfun_cats_1" />
+
+
+        <LinearLayout
+            android:id="@+id/preview_tv_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="@+id/preview_image"
+            app:layout_constraintStart_toStartOf="@+id/preview_image"
+            app:layout_constraintTop_toBottomOf="@+id/preview_image">
+
+            <TextView
+                android:id="@+id/preview_first_line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_light"
+                android:text="Картинка заполнена на 100%"
+                android:textColor="@color/colorDialogTextBig"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/preview_second_line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/roboto_light"
+                android:text="546 квадрата, 12 цветов"
+                android:textColor="@color/colorDialogTextBig"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/preview_third_line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/roboto_light"
+                android:text="Вы всегда сможете найти её в своей мастерской."
+                android:textColor="@color/colorDialogTextBig"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/preview_fourth_line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_light"
+                android:text="Хотите поделиться с друзьями?"
+                android:textColor="@color/colorDialogTextBig"
+                android:textSize="11sp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/preview_buttons_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/preview_tv_container">
+
+            <Button
+                android:id="@+id/preview_shared_btn"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/share_button"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/preview_insta_btn"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="24dp"
+                android:background="@drawable/insta_button"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/preview_download_btn"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="24dp"
+                android:background="@drawable/download_button"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/preview_coloring_btn"
+                android:layout_width="144dp"
+                android:layout_height="48dp"
+                android:background="@drawable/coloring_btn"
+                android:textAllCaps="false"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/preview_favorite_add_btn"
+                android:layout_width="144dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/favorite_add_btn"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/preview_favorite_accept_btn"
+                android:layout_width="144dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/accept_btn"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/preview_favorite_remove_btn"
+                android:layout_width="144dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/favorite_remove_btn"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/preview_remove_btn"
+                android:layout_width="144dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/remove_btn"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/preview_yes_btn"
+                android:layout_width="144dp"
+                android:layout_height="48dp"
+                android:background="@drawable/yes_btn"
+                android:textAllCaps="false"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/preview_no_btn"
+                android:layout_width="144dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/no_btn"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/preview_recovery_btn"
+                android:layout_width="144dp"
+                android:layout_height="48dp"
+                android:background="@drawable/recovery_btn"
+                android:textAllCaps="false"
+                android:visibility="gone" />
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+</RelativeLayout>

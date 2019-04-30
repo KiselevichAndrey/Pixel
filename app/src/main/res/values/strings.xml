@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">PixelFun</string>
+    <string name="menu_main_text_to_subscribe">Подпишитесь, чтобы продолжить использовать приложение без рекламы</string>
+    <string name="menu_main_text_subscribed">Ваша копия приложения успешно активирована.</string>
+    <string name="menu_terms">Ознакомьтесть с условиями подписки по адресу <a>pixelfunapp.com/terms</a></string>
+    <string name="menu_subtitle_subscribed">Подписка истекает через 30 дней.</string>
+    <string name="doubletap_function_title">DoubleTap</string>
+    <string name="magic_function_title">Magic</string>
+    <string name="superzoom_function_title">SuperZoom</string>
+    <string name="tariff_1">100 рублей на 1 месяц</string>
+    <string name="tariff_2">300 рублей на 4 месяц</string>
+    <string name="tariff_3">500 рублей на 6 месяц</string>
+    <string name="ad_banner_id_test">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="ad_interstitial_id_test">ca-app-pub-3940256099942544/1033173712</string>
+    <string-array name="categories_titles">
+        <item>Котолица</item>
+        <item>Млекопитающие</item>
+        <item>Морские животные</item>
+        <item>Насекомые</item>
+        <item>Птицы</item>
+        <item>Цветы и растения</item>
+        <item>Сладости</item>
+        <item>Страшилки</item>
+        <item>Фрукты и овощи</item>
+    </string-array>
+    <string-array name="spinner_entries">
+        <item>Все категории</item>
+        <item>Котолица</item>
+        <item>Млекопитающие</item>
+        <item>Морские животные</item>
+        <item>Насекомые</item>
+        <item>Птицы</item>
+        <item>Цветы и растения</item>
+        <item>Сладости</item>
+        <item>Страшилки</item>
+        <item>Фрукты и овощи</item>
+    </string-array>
+    <string-array name="categories_map">
+        <item>cat_faces</item>
+        <item>Котолица</item>
+        <item>mammals</item>
+        <item>Млекопитающие</item>
+        <item>marine_animals</item>
+        <item>Морские животные</item>
+        <item>insects</item>
+        <item>Насекомые</item>
+        <item>birds</item>
+        <item>Птицы</item>
+        <item>flowers_and_plants</item>
+        <item>Цветы и растения</item>
+        <item>candy</item>
+        <item>Сладости</item>
+        <item>horror</item>
+        <item>Страшилки</item>
+        <item>fruits_and_vegetables</item>
+        <item>Фрукты и овощи</item>
+    </string-array>
+</resources>

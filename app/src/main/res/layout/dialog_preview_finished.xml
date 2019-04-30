@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/bg_preview">
+
+        <View
+            android:id="@+id/preview_restart_btn"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/restart_btn"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <View
+            android:id="@+id/preview_close_btn"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/close_btn_lightbackground"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+        <Button
+            android:id="@+id/preview_left_btn"
+            android:layout_width="20dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="28dp"
+            android:background="@drawable/palette_left_btn_inactive"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <Button
+            android:id="@+id/preview_right_btn"
+            android:layout_width="20dp"
+            android:layout_height="32dp"
+            android:layout_marginEnd="28dp"
+            android:background="@drawable/palette_right_btn_inactive"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/preview_image"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="96dp"
+            android:layout_marginStart="96dp"
+            android:layout_marginTop="64dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintBottom_toTopOf="@+id/preview_shared_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:srcCompat="@drawable/pixelfun_cats_1" />
+
+        <TextView
+            android:id="@+id/preview_first_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/roboto_light"
+            android:text="Картинка заполнена на 100%"
+            android:textColor="@color/colorDialogTextBig"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/preview_image"
+            app:layout_constraintStart_toStartOf="@+id/preview_image"
+            app:layout_constraintTop_toBottomOf="@+id/preview_image" />
+
+        <TextView
+            android:id="@+id/preview_second_line"
+            android:layout_width="wrap_content"
+            android:layout_height="19dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/roboto_light"
+            android:text="Хотите поделиться с друзьями?"
+            android:textColor="@color/colorDialogTextBig"
+            app:layout_constraintEnd_toEndOf="@+id/preview_image"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/preview_image"
+            app:layout_constraintTop_toBottomOf="@+id/preview_first_line" />
+
+        <Button
+            android:id="@+id/preview_shared_btn"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginBottom="32dp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/share_button"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/preview_insta_btn"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/preview_image" />
+
+        <Button
+            android:id="@+id/preview_insta_btn"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/insta_button"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/preview_shared_btn"
+            app:layout_constraintEnd_toStartOf="@+id/preview_download_btn"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/preview_shared_btn"
+            app:layout_constraintTop_toTopOf="@+id/preview_shared_btn"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/preview_download_btn"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/download_button"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/preview_insta_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/preview_insta_btn"
+            app:layout_constraintTop_toTopOf="@+id/preview_insta_btn"
+            app:layout_constraintVertical_bias="1.0" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</RelativeLayout>

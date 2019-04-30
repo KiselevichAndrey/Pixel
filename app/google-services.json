@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "938245048534",
+    "firebase_url": "https://pixelfun-7ee5a.firebaseio.com",
+    "project_id": "pixelfun-7ee5a",
+    "storage_bucket": "pixelfun-7ee5a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:938245048534:android:5084487d6da3f08d",
+        "android_client_info": {
+          "package_name": "com.ppart.pixelpart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "938245048534-vsacte7ee1uief5u982rmjcg9j65h4pp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ppart.pixelpart",
+            "certificate_hash": "493594434351556f5f12daa814c2174f0d279036"
+          }
+        },
+        {
+          "client_id": "938245048534-d5qias0jngh5lob93tl6etb1rfutg8lc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDn7I_v3AbzwK50tQT5AWM6eRls6WMMH2M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "938245048534-d5qias0jngh5lob93tl6etb1rfutg8lc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

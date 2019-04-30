@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:padding="15dp">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/bg_menu">
+
+        <TextView
+            android:id="@+id/menu_main_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/menu_main_text_to_subscribe"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/menu_first_sub_text"
+            android:layout_width="288dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/menu_subtitle_subscribed"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/menu_main_text" />
+
+        <TextView
+            android:id="@+id/menu_second_sub_text"
+            android:layout_width="288dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="0dp"
+            android:autoLink="web"
+            android:linksClickable="true"
+            android:minLines="2"
+            android:text="@string/menu_terms"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/menu_first_sub_text" />
+
+        <LinearLayout
+            android:id="@+id/buttons_tariff"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/menu_second_sub_text">
+
+            <Button
+                android:id="@+id/button_tariff1"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_tariff1"
+                android:text="@string/tariff_1"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/menu_second_sub_text" />
+
+            <Button
+                android:id="@+id/button_tariff2"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_tariff2"
+                android:text="@string/tariff_2"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_tariff1" />
+
+            <Button
+                android:id="@+id/button_tariff3"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_tariff3"
+                android:text="@string/tariff_3"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_tariff2" />
+
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/line_separator"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttons_tariff" />
+
+        <TextView
+            android:id="@+id/textView_option1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/doubletap_function_title"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/buttons_tariff"
+            app:layout_constraintTop_toBottomOf="@+id/view" />
+
+        <TextView
+            android:id="@+id/textView_option2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="@string/magic_function_title"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/buttons_tariff"
+            app:layout_constraintTop_toBottomOf="@+id/textView_option1" />
+
+        <TextView
+            android:id="@+id/textView_option3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="@string/superzoom_function_title"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/buttons_tariff"
+            app:layout_constraintTop_toBottomOf="@+id/textView_option2" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/switch_double_tap"
+            style="@style/SwitchCompat"
+            track="@drawable/switch_menu_track"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/colorWhite"
+            android:thumb="@drawable/switch_menu_thumb"
+            app:layout_constraintBottom_toBottomOf="@+id/textView_option1"
+            app:layout_constraintEnd_toEndOf="@+id/buttons_tariff"
+            app:layout_constraintTop_toTopOf="@+id/textView_option1" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/switch_magic"
+            style="@style/SwitchCompat"
+            track="@drawable/switch_menu_track"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:checked="true"
+            android:textColor="@color/colorWhite"
+            android:thumb="@drawable/switch_menu_thumb"
+            app:layout_constraintBottom_toBottomOf="@+id/textView_option2"
+            app:layout_constraintEnd_toEndOf="@+id/buttons_tariff"
+            app:layout_constraintTop_toTopOf="@+id/textView_option2" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/switch_super_zoom"
+            style="@style/SwitchCompat"
+            track="@drawable/switch_menu_track"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:checked="true"
+            android:textColor="@color/colorWhite"
+            android:thumb="@drawable/switch_menu_thumb"
+            app:layout_constraintBottom_toBottomOf="@+id/textView_option3"
+            app:layout_constraintEnd_toEndOf="@+id/buttons_tariff"
+            app:layout_constraintTop_toTopOf="@+id/textView_option3" />
+
+        <View
+            android:id="@+id/menu_close_btn"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/close_btn_darkbackground"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/switch_super_zoom" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</RelativeLayout>
